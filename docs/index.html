@@ -225,13 +225,37 @@
 
 
 
-                                                <!-- Snapshot -->
-                                                        <article id="snapshot">
-                                                                <h2 class="major">Snapshot</h2>
-								<a href="#profile">Back</a>
-                                                        	<span class="image main"><img src="images/snapshot.png" alt="" /></span>	
+                                                <!-- APFixS -->
+                                                        <article id="apfixs">
+                                                                <h2 class="major">APFixS</h2>
+                                                        <!--    <span class="image main"><img src="https://skyvelleity.com/images/avatar.png" alt="" /></span>	-->
 								
+								<h3>Built to solve one very, very annoying problem</h3>
+								<p>APFixS is an iOS app built with the sole purpose of mitigating unintentional filename duplications on the iOS and iPadOS platforms</p>
+								
+								<p>iOS apps, both first and third party, tend to store collections of media in an abstracted manner, oftentimes storing the files with a UUID for their filename, and other metadata, including former filenames, stored in a database, alongside their UUID.<br> 
+								This allows for a situation in which multiple files of equal hierarchy to have the same filename string attributed to them.<br>
+								If such a selection of files are exported in bulk to the filesystem, an error can occur where multiple files are written to the same directory, with their original filenames applied, resulting in a directory with two unique files that share one filename.<br>
+								This results in a uniquely terrible situation, in which if this directory is copied to another filesystem that does not support duplicate filenames, one of the files may be silently lost.</p>
+								
+								<p>APFixS proposes a solution to this, by installing an application on a target device, allowing a user to quickly check a directory for any filename conflicts, and, should any exist, allow the user to easily rename any conflicting files, 
+								either on a case-by-case basis or programmatically as per the user's requirements.</p>
+								<p>Once all conflicts are rectified, the user will be clearly notified of this, so they know it is safe to proceed in transfering the directory structure to an external storage medium.</p> 
+								
+								<p>There are a number of possible challenegs that may arrise while creating this app, the most significat of which, I anticipate, will be accuratly itemising files in a directory without accidentally ignoring duplicates during enumeration.
+								I anticipate that many libraries which rely on filenames as object identifiers or tags may struggle to safely handle directory structures in such invalid states. As such, lower level filesystem access may be required, 
+								which may not be possible on the platform at hand.<br>
+								The last thing I would want to do is give people false confidence in the safety of their data, as such it isn't enough for the app to simply appear to be working, it must be proven beyond reasonable doubt that it will catch all edge cases.</p>
+								<p>This is, to say the least, non-trivial.</p>
+
+
+
+                                                        <!--        <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, 
+check out my <a href="#work">awesome work</a>.</p> -->
                                                         </article>
+
+
+
 
 
 
@@ -288,6 +312,16 @@
 
                                                         <!--        <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p> -->
                                                         </article>
+
+
+                                                <!-- Snapshot -->
+                                                        <article id="snapshot">
+                                                                <h2 class="major">Snapshot</h2>
+								<a href="#profile">Back</a>
+                                                        	<span class="image main"><img src="images/snapshot.png" alt="" /></span>	
+								
+                                                        </article>
+
 
 
 
